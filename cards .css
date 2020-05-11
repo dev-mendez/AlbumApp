@@ -1,0 +1,109 @@
+body {
+  margin: 0px 10px;
+  background-image: url("./img/nature-board-wood-antique-retro-texture-560002-pxhere.png");
+  background-attachment: local;
+  height: 640px;
+}
+
+menu {
+  position: fixed;
+  width: 100px;
+  height: 500px;
+  background-color: rgba(212, 70, 18, 0.384);
+  box-shadow: 7px 6px 12px 1px #171717;
+  z-index: 0;
+}
+
+button {
+  z-index: 10;
+  text-decoration: none;
+  top: 40px;
+  left: 10px;
+  border: none;
+  position: absolute;
+  padding: 20px 35px;
+  background-color: rgba(141, 141, 121, 0.075);
+  color: rgba(185, 172, 175, 0.808);
+  cursor: pointer;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.3em;
+}
+button:hover {
+  color: rgba(181, 224, 137, 0.733);
+  background-color: rgba(88, 85, 85, 0.164);
+  border: solid 2px 1px rgba(167, 134, 134, 0.384);
+}
+
+input {
+  z-index: 10;
+  text-decoration: none;
+  top: 100px;
+  left: 10px;
+  border: none;
+  position: absolute;
+  padding: 20px 18px;
+  background-color: rgba(141, 141, 121, 0.075);
+  color: rgba(185, 172, 175, 0.808);
+  cursor: pointer;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.3em;
+}
+input:hover {
+  color: rgba(222, 224, 137, 0.733);
+  background-color: rgba(88, 85, 85, 0.164);
+  border: solid 2px 1px rgba(167, 134, 134, 0.384);
+}
+
+.cardContainerContaier {
+  position: relative;
+  padding: 0px 140px;
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.cardContainer {
+  width: 200px;
+  height: 250px;
+  margin-top: 40px;
+  position: relative;
+  perspective: 2000px;
+}
+
+.card {
+  box-shadow: 0px 1px 3px 1px black;
+  width: 180px;
+  height: 250px;
+  transform-style: preserve-3d;
+  transition: all 2.5s linear;
+  cursor: pointer;
+  border: none;
+}
+
+.cardContainer:hover .card {
+  transform: scale(1.3) rotateY(180deg);
+  box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0);
+  z-index: 100;
+}
+
+.backFace {
+  width: inherit;
+  height: inherit;
+  background-color: rgba(10, 10, 10, 0);
+  position: absolute;
+  backface-visibility: hidden;
+}
+.frontFace {
+  width: 180px;
+  height: 250px;
+  background-color: rgba(55, 56, 56, 0.993);
+}
+.autoTransform {
+  transform: scale(1.2) rotateY(180deg);
+  box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0);
+  z-index: 100;
+}
+img {
+  width: 180px;
+  height: 250px;
+}
